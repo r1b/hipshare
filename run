@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+import sys
+from hipshare import Hipshare
+from hipshare.lib.util import usage
+
+try:
+    hipshare = Hipshare(sys.argv[1])
+except IndexError:
+    usage()
+
+hipshare.share()

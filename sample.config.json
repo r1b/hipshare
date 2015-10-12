@@ -1,0 +1,31 @@
+{
+    "options": {
+        // On HipChat this must be the same as yr Room nickname
+        "nick": "Rob Jensen",
+
+        // MUC plugin, required
+        "plugins": ["xep_0045"],
+
+        // You can put any utility here
+        "shell": "/bin/bash",
+
+        // Not implemented yet
+        "ttl": 60
+    },
+    "strategies": {
+        // You can have any number of strategies w/any name
+        "cool": {
+            // Should look something like this
+            "jid": "XXXXXXXX@chat.hipchat.com",
+
+            // An environment variable that contains yr password
+            "password_env": "XXXXXXXXXXXXXX",
+
+            // Not implemented yet
+            "people": [],
+
+            // Should look something like this
+            "rooms": ["XXXXXXX@conf.hipchat.com"]
+        }
+    }
+}

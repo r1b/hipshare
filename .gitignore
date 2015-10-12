@@ -1,0 +1,10 @@
+# Config
+config.json
+config.log.json
+
+# Logs
+*.log
+
+# Python shit
+*.pyc
+__pycache__/
